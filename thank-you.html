@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - InkyLab.AI</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'inky-navy': '#1B2A5E',
+                        'inky-red': '#FF4A4A',
+                        'inky-dark': '#0F1941',
+                    },
+                    fontFamily: {
+                        'serif': ['Cormorant Garamond', 'serif'],
+                        'sans': ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-white min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-2xl mx-auto text-center fade-in">
+        <!-- Success Icon -->
+        <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+            <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+        </div>
+        
+        <!-- Message -->
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-inky-navy mb-6">
+            Thank You!
+        </h1>
+        <div class="w-24 h-1 bg-inky-red mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-600 mb-4">
+            We've received your message and will get back to you within 24 hours.
+        </p>
+        <p class="text-gray-500 mb-10">
+            Your inquiry is important to us, and we're excited to discuss your AI project.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/" class="bg-inky-red text-white px-8 py-4 rounded-full hover:bg-red-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
+                Back to Home
+            </a>
+            <a href="/#expertise" class="bg-white text-inky-navy border-2 border-inky-navy px-8 py-4 rounded-full hover:bg-inky-navy hover:text-white transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl">
+                View Our Expertise
+            </a>
+        </div>
+        
+        <!-- Additional Info -->
+        <div class="mt-16 p-6 bg-white rounded-2xl shadow-md">
+            <p class="text-sm text-gray-600">
+                <strong class="text-inky-navy">Need immediate assistance?</strong><br>
+                Email us directly at <a href="mailto:inkylabai@gmail.com" class="text-inky-red hover:underline">inkylabai@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
